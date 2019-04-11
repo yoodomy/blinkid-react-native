@@ -7,6 +7,22 @@ import { OverlaySettings } from '../overlaySettings'
 export class DocumentOverlaySettings extends OverlaySettings {
     constructor() {
         super('DocumentOverlaySettings');
+         /**
+     * String: splash message that is shown before scanning the first side of the document, while starting camera.
+     * If null, default value will be used.
+     */
+    this.firstSideSplashMessage = null;
+    /**
+     * String: user instructions that are shown above camera preview while the first side of the
+     * document is being scanned.
+     * If null, default value will be used.
+     */
+    this.firstSideInstructions = null;
+    /**
+     * String: glare message that is shown if glare was detected while scanning document.
+     * If null, default value will be used.
+     */
+    this.glareMessage = null;
     }
 }
 
