@@ -65,7 +65,7 @@ class BlinkIDWrapper {
                   }
             } catch (error) {
                   console.log(error);
-                  return [];
+                  return error;
             }
       }
 }
